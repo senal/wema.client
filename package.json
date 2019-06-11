@@ -1,7 +1,7 @@
 {
   "name": "wema.client",
   "version": "0.1.0",
-  "homepage": "https://senal.github.io/wema.client",
+  "homepage": "https://senal.github.io/wema-client",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
