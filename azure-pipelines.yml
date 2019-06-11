@@ -4,6 +4,9 @@ pool:
 trigger:
 - source
 
+variables:
+- group: wema-client-varables
+
 steps:
 - checkout: self
   persistCredentials: true
@@ -15,5 +18,5 @@ steps:
     git config user.email "ranga.fernando@gmail.com" 
     git config user.name "senal"
     npm install
-    npm run deploy -- -r https://$(wema-client-varables.github_pat)@github.com/wema.client.git
+    npm run deploy -- -r https://$(github_pat)@github.com/wema.client.git
   displayName: 'npm install and build'
